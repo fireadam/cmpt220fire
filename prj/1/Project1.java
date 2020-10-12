@@ -1,3 +1,6 @@
+/**
+ * Always add comments to your code.
+ */
 import java.util.*;
 
 public class Project1 {  
