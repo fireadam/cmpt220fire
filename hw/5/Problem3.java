@@ -9,7 +9,7 @@ public class Problem3 {
         System.out.print(format(sec));
     }
     public static String format(long seconds){
-        long hr = (seconds/3600)%24;
+        long hr = (seconds/3600);
         long min = (seconds % 3600)/60;
         long secs = (seconds % 3600)%60;
         String s = hr + ":" + min + ":" + secs;
