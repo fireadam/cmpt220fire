@@ -3,6 +3,7 @@ public class Project2 {
         java.util.Scanner input = new java.util.Scanner(System.in);
         System.out.print("Enter an interest rate and an investment amount: ");
         //rate and investment inputs
+        // It is not vlear what the format of the rate should be, e.g. 9%, 9, .09, etc
         double rate = input.nextDouble();
         double investment = input.nextDouble();
         //Year array
@@ -14,7 +15,8 @@ public class Project2 {
         for (int i = 0; i<30; i++){
             t[i] = (i+1);
             calc[i] = futureInvestmentValue(investment, rate/12, i+1);
-            System.out.println(t[i] + "   " + calc[i]);
+            // You should format the output to only 2 digits after the decimal point
+            System.out.println(t[i] + "   " + calc[i]); 
         }
     }
     //Method for our equation
