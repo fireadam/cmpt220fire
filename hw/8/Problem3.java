@@ -21,7 +21,7 @@ class Flight{
         this.arrivalTime = arrivalTime;
     }
     public long getFlightTime(){
-        return (arrivalTime.getTimeInMillis()-departureTime.getTimeInMillis());
+        return (arrivalTime.getTimeInMillis()-departureTime.getTimeInMillis())/(1000*60);
     }
     public String getFlightNumber(){
         return flightNumber;

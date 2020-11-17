@@ -6,7 +6,7 @@ public class Problem1 {
         System.out.print("Enter your string and delimiters:  ");
         String mystring = input.nextLine();
         String myd = input.nextLine();
-        split(mystring,myd);
+        System.out.println(split(mystring,myd));
     }
     public static ArrayList<String> split(String s, String delimiters){
         ArrayList<String> finalList = new ArrayList<>();
@@ -17,11 +17,12 @@ public class Problem1 {
         //add elements to finalList
         int begin = 0;
         for (int i = 0; i< s.length(); i++){
-            if(mydString.contains(s.charAt(i))){
+            if(mydString.contains(Character.toString(s.charAt(i)))){
                 finalList.add(s.substring(begin,i));
                 begin=i+1;
             }
         }
+        finalList.add(s.substring(begin));
         return finalList;
 
     }

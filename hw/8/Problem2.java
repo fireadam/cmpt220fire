@@ -18,6 +18,8 @@ public class Problem2 {
             c++;
         }
     }
+
+    // You had to insert from largest to smallest
     static String container(ArrayList<Integer> arr, int m) {
         String end = "";
         int t;
